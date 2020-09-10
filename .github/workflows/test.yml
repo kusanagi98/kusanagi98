@@ -6,7 +6,7 @@ name: CI
 # events but only for the master branch
 on:
   schedule: # execute every 24 hours
-    - cron: '*/30 * * * *'
+    - cron: '* */24 * * *'
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -26,8 +26,12 @@ jobs:
         run: echo Hello, world! >> README.md
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          ls
-          git commit README.md -m 'Update README.md'
-          git push origin
+      - name: Commit
+        uses: EndBug/add-and-commit@v4
+        with:
+          author_name: Your Name
+          author_email: mail@example.com
+          message: "update README.md"
+          add: "README.md"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

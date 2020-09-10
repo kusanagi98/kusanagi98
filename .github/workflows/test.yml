@@ -29,5 +29,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           ls
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          git commit README.md -m 'Update README.md'
+          git push origin

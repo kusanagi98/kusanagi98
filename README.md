@@ -15,3 +15,4 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 Hello, world!
+![Foo](http://www.google.com.au/images/nav_logo7.png)

@@ -25,7 +25,7 @@ jobs:
       - name: Run multiple lines
         run: |
           rm README.md 
-          echo "[WEEBOO](https://i.imgur.com/EdLjOHp.png)" >> README.md
+          echo "![WEEBOO](https://i.imgur.com/EdLjOHp.png)" >> README.md
         env:
           IMAGE: EdLjOHp
 

@@ -24,10 +24,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run multiple lines
         run: |
-          rm README.md 
-          echo "![WEEBOO](https://i.imgur.com/EdLjOHp.png)" >> README.md
-        env:
-          IMAGE: EdLjOHp
+          chmod +x ./ChangePicture.sh
+          ./ChangePicture.sh
+
 
       # Runs a set of commands using the runners shell
       - name: Commit

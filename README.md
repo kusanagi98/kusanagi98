@@ -1,1 +1,1 @@
-![WEEBOO](https://i.imgur.com/pt1UqUb.png)
+![WEEBOO](https://i.imgur.com/6dUE06q.png)
